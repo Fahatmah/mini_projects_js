@@ -1,6 +1,6 @@
 # Acknowledgement
 
-### [JS Mini Projects Live Site](https://fahatmah.github.io/mini_projects_js/index.html)
+### [JS Mini Projects Live Site](https://mini-project-js.netlify.app/)
 
 ## [5 Mini JavaScript Projects - For Beginners](https://youtu.be/2ml4x0rO1PQ?si=lDB4SwVObgeViabg)
 
