@@ -1,0 +1,86 @@
+@import url('/utils.css');
+
+.project-container {
+  width: min(100% - 2rem, 71rem);
+  margin-inline: auto;
+  margin-block: 3rem;
+}
+
+.project-container header h1 {
+  font-size: var(--fs-header);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-container header h2 {
+  font-size: var(--fs-subheading);
+  color: var(--ntrl-clr-100);
+  line-height: 1.5;
+}
+
+.project-container .project-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.project-container .project-list li {
+  width: 100%;
+}
+
+.project-container .project-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--main-clr-100);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--main-clr-100);
+}
+
+.project-container .project-list li a:hover {
+  background-color: hsla(266, 100%, 50%, 0.2);
+  border-color: var(--main-clr-400);
+  box-shadow: 0 0 18px hsla(266, 100%, 50%, 0.5);
+}
+
+.project-container .project-list li a svg path {
+  stroke: var(--main-clr-100);
+}
+
+.project-container .project-list li a:hover svg path {
+  stroke: var(--main-clr-400);
+}
+
+@media screen and (min-width: 720px) {
+  .project-container .project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* outline: var(--debug); */
+  }
+
+  .project-container .project-list li {
+    gap: 2rem;
+    flex: 0 1 30%;
+  }
+
+  .project-container .project-list li a {
+    transition: 200ms ease-in-out;
+  }
+
+  .project-container .project-list li a:hover {
+    transform: scale(1.05);
+  }
+
+  .project-container .project-list li a svg path {
+    stroke: none;
+  }
+
+  .project-container .project-list li a:hover svg path {
+    stroke: var(--main-clr-400);
+  }
+}

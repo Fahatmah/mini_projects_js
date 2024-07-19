@@ -1,0 +1,36 @@
+@import url('/utils.css');
+@import url('/nav.css');
+@import url('/projectlist.css');
+@import url('/footer.css');
+
+.content-width {
+  width: min(100% - 2rem, 71rem);
+  margin-inline: auto;
+  margin-block: 3rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.content header h1 {
+  font-size: var(--fs-header);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.content header h2 {
+  font-size: var(--fs-subheading);
+  color: var(--ntrl-clr-100);
+  line-height: 1.5;
+}
+
+.divider {
+  width: min(100% - 2rem, 71rem);
+  margin-inline: auto;
+  margin-block: 3rem;
+  height: 0.1rem;
+  background-color: var(--ntrl-clr-100);
+}

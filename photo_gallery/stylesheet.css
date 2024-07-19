@@ -1,0 +1,41 @@
+@import url('/utils.css');
+
+:root {
+  --mobile-view: 1;
+  --desktop-view: auto-fit;
+  --minmax: minmax(0, 1fr);
+}
+
+.gallery-container .grid-container {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(var(--mobile-view), var(--minmax));
+  gap: 1rem;
+}
+
+.gallery-container .grid-container div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: var(--minmax);
+  gap: 1rem;
+}
+
+.gallery-container .grid-container div div {
+  overflow: hidden;
+}
+
+.gallery-container .grid-container div div a img {
+  width: 100%;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.gallery-container .grid-container div div:hover a img {
+  scale: 1.1;
+}
+
+@media screen and (min-width: 720px) {
+  .gallery-container .grid-container {
+    grid-template-columns: repeat(var(--desktop-view), var(--minmax));
+  }
+}

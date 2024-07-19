@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- scripts -->
+    <script type="module" src="/home.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Memory Game - Mini Projects</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="nav-container">
+          <a href="/index.html" class="logo">
+            <img src="/assets/logo.png" alt=""
+          /></a>
+          <button class="menu-btn">
+            <img src="/assets/menu.svg" alt="" />
+          </button>
+
+          <ul class="links-container">
+            <li>
+              <a
+                href="https://github.com/Fahatmah/mini_projects_js.git"
+                class="source-code"
+                >Source Code</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Fahatmah" class="gh-profile"
+                >Github Profile
+                <!-- <img src="/assets/myAvatar.png" alt="avatar"
+              /> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="game-container content-width content">
+        <header>
+          <h1>Memory Game</h1>
+          <h2>This is a simple game, find a pair of emojis.</h2>
+        </header>
+
+        <div class="grid-container">
+          <div class="grid"></div>
+          <button onclick="window.location.reload()">Reset Game</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&#169; 2024 Fat. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

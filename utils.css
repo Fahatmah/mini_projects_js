@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font: inherit;
+}
+
+button,
+input,
+textarea {
+  outline: 0;
+  border: 0;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  /* main colors */
+  --main-clr-100: #f5f5f5;
+  --main-clr-200: #f6ae2d;
+  --main-clr-300: #d9307c;
+  --main-clr-400: #7000ff;
+  --main-clr-500: #2a282a;
+  /* neutral colors */
+  --ntrl-clr-100: #757575;
+  --ntrl-clr-200: #e8143a;
+
+  --ff-def: 'Inter', sans-serif;
+
+  --fs-small: 0.875rem;
+  --fs-text-def: 1rem;
+  --fs-subheading: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+  --fs-text-desktop: 1.5rem;
+  --fs-header: clamp(2.5rem, 1.7958rem + 3.0047vw, 4.5rem);
+
+  --fs-body: var(--fs-text-def);
+  --ff-body: var(--ff-def);
+
+  --debug: 1px solid red;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--main-clr-100);
+  background-color: var(--main-clr-500);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="lightbox.css" />
+    <!-- scripts -->
+    <script type="module" src="/home.js" defer></script>
+    <script src="script.js" defer></script>
+    <!-- <script src="lightbox-plus-jquery.js" defer></script> -->
+    <title>Photo Gallery - Mini Projects</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="nav-container">
+          <a href="/index.html" class="logo">
+            <img src="/assets/logo.png" alt=""
+          /></a>
+          <button class="menu-btn">
+            <img src="/assets/menu.svg" alt="" />
+          </button>
+
+          <ul class="links-container">
+            <li>
+              <a
+                href="https://github.com/Fahatmah/mini_projects_js.git"
+                class="source-code"
+                >Source Code</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Fahatmah" class="gh-profile"
+                >Github Profile
+                <!-- <img src="/assets/myAvatar.png" alt="avatar"
+              /> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="gallery-container content-width content">
+        <header>
+          <h1>Photo Gallery</h1>
+          <h2>A grid of random unsplash images.</h2>
+        </header>
+
+        <div class="grid-container">
+          <div>
+            <div>
+              <a
+                href="images/1.jpg"
+                data-lightbox="models"
+                data-title="White Road Bike with SRAM Groupset"
+              >
+                <img src="images/1.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="images/6.jpg"
+                data-lightbox="models"
+                data-title="Caption Here"
+              >
+                <img src="images/6.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="images/4.jpg"
+                data-lightbox="models"
+                data-title="Caption Here"
+              >
+                <img src="images/4.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="images/5.jpg"
+                data-lightbox="models"
+                data-title="Caption Here"
+              >
+                <img src="images/5.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <div>
+              <a
+                href="images/3.jpg"
+                data-lightbox="models"
+                data-title="Caption Here"
+              >
+                <img src="images/3.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="images/2.jpg"
+                data-lightbox="models"
+                data-title="Caption Here"
+              >
+                <img src="images/2.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="images/7.jpg"
+                data-lightbox="models"
+                data-title="Caption Here"
+              >
+                <img src="images/7.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="images/8.jpg"
+                data-lightbox="models"
+                data-title="Caption Here"
+              >
+                <img src="images/8.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&#169; 2024 Fat. All rights reserved.</p>
+    </footer>
+    <script src="lightbox-plus-jquery.js"></script>
+    <!-- <script src="lightbox.js"></script> -->
+  </body>
+</html>

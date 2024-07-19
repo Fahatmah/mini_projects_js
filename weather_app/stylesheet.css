@@ -1,0 +1,101 @@
+@import url('/utils.css');
+
+.input-container {
+  width: 100%;
+}
+
+.weather-container .weather-info-container,
+.input-container form,
+.weather-container .weather-info-container .info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-container form {
+  gap: 8px;
+}
+
+.input-container form > * {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.input-container form input {
+  background-color: var(--main-clr-100);
+}
+
+.input-container form button {
+  color: var(--main-clr-100);
+  background-color: var(--main-clr-400);
+}
+
+.weather-container .weather-info-container {
+  width: 100%;
+  gap: 1rem;
+}
+
+.weather-info-container .state {
+  font-size: 1.25rem;
+}
+
+.weather-container .weather-info-container .info-container {
+  width: 100%;
+  gap: 8px;
+}
+
+.weather-container .weather-info-container .info-container .weather-celcius {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.weather-container .weather-info-container .info-container .weather-desc {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 800px) {
+  .weather-container {
+    position: relative;
+  }
+
+  .weather-container .input-container form {
+    flex-direction: row;
+  }
+
+  .weather-container .input-container form > * {
+    width: initial;
+  }
+
+  .weather-container > * {
+    width: initial;
+    /* outline: var(--debug); */
+  }
+
+  .weather-container .weather-info-container {
+    width: initial;
+    align-items: flex-start;
+    position: absolute;
+    left: 31rem;
+    /* top: 50%;
+    left: 0;
+    transform: translate(250%, -50%); */
+  }
+
+  .weather-container .weather-info-container .info-container {
+    align-items: flex-start;
+  }
+
+  .weather-container .weather-info-container .state {
+    font-size: 2.5rem;
+  }
+
+  .weather-container .weather-info-container .info-container .weather-celcius {
+    font-size: 4rem;
+  }
+
+  .weather-container .weather-info-container .info-container .weather-desc {
+    font-size: 2rem;
+  }
+}

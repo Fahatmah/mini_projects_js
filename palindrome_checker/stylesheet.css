@@ -1,0 +1,52 @@
+@import url('/utils.css');
+
+.input-container {
+  width: 100%;
+}
+
+.input-container form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.input-container form > * {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.input-container form input {
+  color: var(--main-clr-500);
+  font-weight: 500;
+  background-color: var(--main-clr-100);
+}
+
+.input-container form button {
+  color: var(--main-clr-100);
+  background-color: var(--main-clr-400);
+  cursor: pointer;
+}
+
+.input-container form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #57d44c;
+  font-weight: 500;
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .input-container form {
+    flex-direction: row;
+  }
+
+  .input-container form > * {
+    width: initial;
+  }
+}

@@ -1,0 +1,59 @@
+@import url('/utils.css');
+
+.todo-container .input-container {
+  gap: 1rem;
+}
+
+.todo-container .input-container,
+.todo-container .input-container form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.todo-container .input-container form {
+  gap: 8px;
+}
+
+.todo-container .input-container form > * {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.todo-container .input-container form input {
+  background-color: var(--main-clr-100);
+}
+
+.todo-container .input-container form button {
+  color: var(--main-clr-100);
+  background-color: var(--main-clr-400);
+}
+
+.todo-container .input-container .lists-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo-container .input-container .lists-container > * {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-container .input-container .lists-container .delete-btn {
+  color: var(--main-clr-100);
+  padding: 1rem;
+  background-color: var(--ntrl-clr-200);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 720px) {
+}

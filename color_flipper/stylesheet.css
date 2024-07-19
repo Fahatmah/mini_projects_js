@@ -1,0 +1,46 @@
+@import url('/utils.css');
+
+.color-flipper-container .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.color-flipper-container .button-container .btn {
+  color: var(--main-clr-100);
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.color-flipper-container .button-container .btn:hover {
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px var(--main-clr-100);
+}
+
+.color-flipper-container .button-container .btn.one {
+  background-color: var(--main-clr-400);
+}
+
+.color-flipper-container .button-container .btn.two {
+  color: var(--main-clr-500);
+  background-color: var(--main-clr-200);
+}
+
+.color-flipper-container .button-container .btn.three {
+  background-color: #e8143a;
+}
+
+.color-flipper-container .button-container .btn.four {
+  color: var(--main-clr-500);
+  background-color: var(--main-clr-100);
+}
+
+.divider {
+  width: min(100% - 2rem, 71rem);
+  margin-inline: auto;
+  margin-block: 3rem;
+  height: 0.1rem;
+  background-color: var(--ntrl-clr-100);
+}

@@ -1,0 +1,67 @@
+@import url('/utils.css');
+
+.watch-container {
+  gap: 8px;
+}
+
+.watch-container .time-text {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.watch-container,
+.buttons-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttons-container {
+  width: 100%;
+  gap: 1rem;
+}
+
+.buttons-container > * {
+  width: 100%;
+  font-weight: 500;
+  color: var(--main-clr-100);
+  padding: 1rem;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.buttons-container button:nth-child(1) {
+  background-color: var(--main-clr-400);
+}
+
+.buttons-container button:nth-child(2) {
+  background-color: var(--ntrl-clr-200);
+}
+
+.buttons-container button:nth-child(3) {
+  color: var(--main-clr-500);
+  background-color: var(--main-clr-100);
+}
+
+@media screen and (min-width: 720px) {
+  .watch-container,
+  .buttons-container {
+    align-items: flex-start;
+  }
+
+  .watch-container .time-text {
+    padding-inline-start: 0;
+  }
+
+  .buttons-container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .buttons-container > * {
+    width: initial;
+  }
+}
